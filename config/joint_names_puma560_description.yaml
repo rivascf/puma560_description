@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'base_waist_joint', 'waist_shoulder_joint', 'shoulder_elbow_link', 'elbow_wrist_roll_joint', 'wrist_roll_bend_joint', ]
