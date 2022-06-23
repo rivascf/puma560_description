@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/base_link.STL" />
+          filename="package://puma560_description/meshes/puma560_base_link.STL" />
       </geometry>
       <material
         name="white">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/base_link.STL" />
+          filename="package://puma560_description/meshes/puma560_base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/waist_link.STL" />
+          filename="package://puma560_description/meshes/puma560_waist_link.STL" />
       </geometry>
       <material
         name="white">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/waist_link.STL" />
+          filename="package://puma560_description/meshes/puma560_waist_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/shoulder_link.STL" />
+          filename="package://puma560_description/meshes/puma560_shoulder_link.STL" />
       </geometry>
       <material
         name="gris01">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/shoulder_link.STL" />
+          filename="package://puma560_description/meshes/puma560_shoulder_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/elbow_link.STL" />
+          filename="package://puma560_description/meshes/puma560_elbow_link.STL" />
       </geometry>
       <material
         name="white">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/elbow_link.STL" />
+          filename="package://puma560_description/meshes/puma560_elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -240,7 +240,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/wrist_roll_link.STL" />
+          filename="package://puma560_description/meshes/puma560_wrist_roll_link.STL" />
       </geometry>
       <material
         name="gris2">
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/wrist_roll_link.STL" />
+          filename="package://puma560_description/meshes/puma560_wrist_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -298,7 +298,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/wrist_bend_link.STL" />
+          filename="package://puma560_description/meshes/puma560_wrist_bend_link.STL" />
       </geometry>
       <material
         name="gris2">
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/wrist_bend_link.STL" />
+          filename="package://puma560_description/meshes/puma560_wrist_bend_link.STL" />
       </geometry>
     </collision>
   </link>
