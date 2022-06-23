@@ -2,4 +2,4 @@
 
 ## Descripcion
 
-Resultados de la exportacion
+Resultados de la exportación y mallas ajustadas al origen del sistema  de coordenadas correcto para cada eslabón.
