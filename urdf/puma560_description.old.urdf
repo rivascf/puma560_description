@@ -26,7 +26,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_base_link.STL" />
+          filename="package://puma560_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="white">
@@ -40,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_base_link.STL" />
+          filename="package://puma560_description/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -66,7 +66,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_waist_link.STL" />
+          filename="package://puma560_description/meshes/waist_link.STL" />
       </geometry>
       <material
         name="white">
@@ -80,7 +80,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_waist_link.STL" />
+          filename="package://puma560_description/meshes/waist_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -113,7 +113,7 @@
       <inertia
         ixx="0.09723"
         ixy="0.0043475"
-        ixz="-7.8858E-06"
+        ixz="-7.8857E-06"
         iyy="0.65976"
         iyz="4.8383E-05"
         izz="0.59657" />
@@ -124,7 +124,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_shoulder_link.STL" />
+          filename="package://puma560_description/meshes/shoulder_link.STL" />
       </geometry>
       <material
         name="gris01">
@@ -138,7 +138,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_shoulder_link.STL" />
+          filename="package://puma560_description/meshes/shoulder_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -147,7 +147,7 @@
     type="revolute">
     <origin
       xyz="0 -0.21844 0"
-      rpy="0 -0.046426 0" />
+      rpy="0 -0.083022 0" />
     <parent
       link="waist_link" />
     <child
@@ -164,14 +164,14 @@
     name="elbow_link">
     <inertial>
       <origin
-        xyz="0.088774 -1.5623E-06 1.1788E-06"
+        xyz="0.088774 1.5623E-06 -1.1788E-06"
         rpy="0 0 0" />
       <mass
         value="4.6025" />
       <inertia
         ixx="0.0091916"
-        ixy="-2.2739E-06"
-        ixz="-4.837E-07"
+        ixy="2.2739E-06"
+        ixz="4.837E-07"
         iyy="0.087355"
         iyz="3.6529E-07"
         izz="0.082615" />
@@ -182,7 +182,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_elbow_link.STL" />
+          filename="package://puma560_description/meshes/elbow_link.STL" />
       </geometry>
       <material
         name="white">
@@ -196,7 +196,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_elbow_link.STL" />
+          filename="package://puma560_description/meshes/elbow_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -205,13 +205,13 @@
     type="revolute">
     <origin
       xyz="0.4318 0.0889 0"
-      rpy="0 0.02129 0" />
+      rpy="3.1416 0.057886 0" />
     <parent
       link="shoulder_link" />
     <child
       link="elbow_link" />
     <axis
-      xyz="0 1 0" />
+      xyz="0 -1 0" />
     <limit
       lower="-2.3562"
       upper="2.3562"
@@ -222,16 +222,16 @@
     name="wrist_roll_link">
     <inertial>
       <origin
-        xyz="-0.032409 4.1633E-17 0"
+        xyz="-0.032409 -1.3878E-17 0"
         rpy="0 0 0" />
       <mass
         value="0.47079" />
       <inertia
         ixx="0.00046683"
-        ixy="-6.6069E-20"
-        ixz="1.1164E-19"
+        ixy="-6.0139E-20"
+        ixz="1.0912E-19"
         iyy="0.00073772"
-        iyz="-2.4564E-20"
+        iyz="-3.134E-20"
         izz="0.00077289" />
     </inertial>
     <visual>
@@ -240,10 +240,10 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_wrist_roll_link.STL" />
+          filename="package://puma560_description/meshes/wrist_roll_link.STL" />
       </geometry>
       <material
-        name="gris02">
+        name="gris2">
         <color
           rgba="0.79216 0.81961 0.93333 1" />
       </material>
@@ -254,7 +254,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_wrist_roll_link.STL" />
+          filename="package://puma560_description/meshes/wrist_roll_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -263,7 +263,7 @@
     type="revolute">
     <origin
       xyz="0.43209 0 0"
-      rpy="0.011076 0 0" />
+      rpy="-3.1305 0 0" />
     <parent
       link="elbow_link" />
     <child
@@ -280,16 +280,16 @@
     name="wrist_bend_link">
     <inertial>
       <origin
-        xyz="0.010974 -1.1247E-09 2.6153E-09"
+        xyz="0.010974 -6.7753E-10 1.7546E-09"
         rpy="0 0 0" />
       <mass
         value="0.077406" />
       <inertia
         ixx="1.6966E-05"
-        ixy="1.0331E-12"
-        ixz="-3.9779E-12"
+        ixy="6.3394E-13"
+        ixz="-3.0414E-12"
         iyy="4.5414E-05"
-        iyz="1.1635E-11"
+        iyz="1.1518E-11"
         izz="4.3032E-05" />
     </inertial>
     <visual>
@@ -298,10 +298,10 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_wrist_bend_link.STL" />
+          filename="package://puma560_description/meshes/wrist_bend_link.STL" />
       </geometry>
       <material
-        name="gris02">
+        name="gris2">
         <color
           rgba="0.79216 0.81961 0.93333 1" />
       </material>
@@ -312,7 +312,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://puma560_description/meshes/puma560_wrist_bend_link.STL" />
+          filename="package://puma560_description/meshes/wrist_bend_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -321,7 +321,7 @@
     type="revolute">
     <origin
       xyz="0 0 0"
-      rpy="0 -0.14699 0" />
+      rpy="0 -0.19722 0" />
     <parent
       link="wrist_roll_link" />
     <child
